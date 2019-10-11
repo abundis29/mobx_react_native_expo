@@ -15,6 +15,8 @@ PODS:
     - UMCore
   - EXLinearGradient (7.0.1):
     - UMCore
+  - EXLocalization (7.0.0):
+    - UMCore
   - EXLocation (7.0.0):
     - UMCore
     - UMPermissionsInterface
@@ -87,6 +89,8 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNCAsyncStorage (1.6.2):
+    - React
   - RNGestureHandler (1.3.0):
     - React
   - RNReanimated (1.2.0):
@@ -113,11 +117,12 @@ PODS:
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAppLoaderProvider (from `../node_modules/expo/node_modules/expo-app-loader-provider/ios`)
-  - EXConstants (from `../node_modules/expo/node_modules/expo-constants/ios`)
+  - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo/node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
   - EXKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - EXLinearGradient (from `../node_modules/expo-linear-gradient/ios`)
+  - EXLocalization (from `../node_modules/expo-localization/ios`)
   - EXLocation (from `../node_modules/expo-location/ios`)
   - EXPermissions (from `../node_modules/expo/node_modules/expo-permissions/ios`)
   - EXSQLite (from `../node_modules/expo-sqlite/ios`)
@@ -138,6 +143,7 @@ DEPENDENCIES:
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler/RNGestureHandler.podspec`)
   - RNReanimated (from `../node_modules/react-native-reanimated/RNReanimated.podspec`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -167,7 +173,7 @@ EXTERNAL SOURCES:
     path: "../node_modules/expo/node_modules/expo-app-loader-provider/ios"
   EXConstants:
     :path: !ruby/object:Pathname
-    path: "../node_modules/expo/node_modules/expo-constants/ios"
+    path: "../node_modules/expo-constants/ios"
   EXFileSystem:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo/node_modules/expo-file-system/ios"
@@ -180,6 +186,9 @@ EXTERNAL SOURCES:
   EXLinearGradient:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-linear-gradient/ios"
+  EXLocalization:
+    :path: !ruby/object:Pathname
+    path: "../node_modules/expo-localization/ios"
   EXLocation:
     :path: !ruby/object:Pathname
     path: "../node_modules/expo-location/ios"
@@ -198,6 +207,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-community/async-storage"
   RNGestureHandler:
     :podspec: "../node_modules/react-native-gesture-handler/RNGestureHandler.podspec"
   RNReanimated:
@@ -252,6 +263,7 @@ SPEC CHECKSUMS:
   EXFont: f01cffd265689fe1a353914a5d377f2d7e3804b3
   EXKeepAwake: 0c9a81da6886449bed0ce37403330c58a7fd8f5d
   EXLinearGradient: 225b6c9888c1837bde7eaee64496cafda45d6ccc
+  EXLocalization: 348a20e02a5cf8d44e8c04f611f339df37a7359e
   EXLocation: 429443e5368923b236cd726d1c40ee8d291eedbc
   EXPermissions: 332e6241b48d34a8363a78d87d90a20436a9eff9
   EXSQLite: 2c18c50ce378e047c902f50fd45f9097ae5ca14f
@@ -259,6 +271,7 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: 1d605e098d69bdf08960787f3446f0a9dc2e2ccf
+  RNCAsyncStorage: e99188b8a89ea0edddc82d8831cd5142f4550fdc
   RNGestureHandler: 5329a942fce3d41c68b84c2c2276ce06a696d8b0
   RNReanimated: 1b52415c4302f198cb581282a0166690bad62c43
   RNScreens: 354046589421edc3d83d5c6212475bf1fb9a731d
@@ -276,6 +289,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: 739ea05d5ee490f5befe35201fb683eb9a1fc4b8
   yoga: 128daf064cacaede0c3bb27424b6b4c71052e6cd
 
-PODFILE CHECKSUM: 271dc4517d873e345e43673e90c73e327128b6ed
+PODFILE CHECKSUM: 755319b967fb030d81a11aac3ef2419f94bd17e1
 
 COCOAPODS: 1.5.3
