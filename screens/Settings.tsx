@@ -9,7 +9,8 @@ import {
 
 import { themes, theme, withTheme } from "../themes/themeProvider";
 
-SettingsScreen = ({ theme, themes, setTheme }) => {
+export const SettingsScreen = ({ theme, themes, setTheme }) => {
+
   renderItem = ({ item }) => (
     <TouchableOpacity onPress={() => setTheme(item.key)}>
       <View

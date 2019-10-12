@@ -1,5 +1,5 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, Text, View, Button, TouchableOpacity } from "react-native";
 import AppNavigator from "./navigation/Navigator";
 
 // Expo
@@ -15,19 +15,9 @@ import appStore from "./stores/appStore";
 // Theme
 import { ThemeContextProvider } from "./themes/themeProvider";
 
-@observer
-export default class App extends React.Component {
-  render() {
-    return (
-      <MobXProvider store={appStore}>
-        <ThemeContextProvider>
-          <AppNavigator />
-        </ThemeContextProvider>
-      </MobXProvider>
-    );
-  }
+const App = () => {
 
-  _loadResourcesAsync = async () => {
+  const _loadResourcesAsync = async () => {
     return Promise.all([
       Asset.loadAsync([
         require("./assets/images/robot-dev.png"),
@@ -46,11 +36,34 @@ export default class App extends React.Component {
     ]);
   };
 
-  _handleLoadingError = error => {
+  const _handleLoadingError = error => {
     Sentry.captureException(error);
   };
 
-  _handleFinishLoading = () => {
+  const _handleFinishLoading = () => {
     this.setState({ isLoadingComplete: true });
   };
-}
+
+  return (
+    <ThemeContextProvider>
+      <AppNavigator />
+    </ThemeContextProvider>
+  );
+};
+
+export default App;
+
+// import React from 'react';
+// import { StyleSheet, Text, View } from 'react-native';
+
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>Open up App.tsx to start working on your app!</Text>
+//     </View>
+//   );
+// }
+
+
+
+
