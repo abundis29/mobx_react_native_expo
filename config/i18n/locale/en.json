@@ -5,7 +5,8 @@
     "success": "success",
     "send": "Send",
     "cancel": "Cancel",
-    "starter":"Open up App.tsx to start working on your app!"
+    "starter":"Open up App.tsx to start working on your app!",
+    "main":"MAIN APP 🐝"
   },
   "auth": {
     "offline": "Please check your Internet connection",

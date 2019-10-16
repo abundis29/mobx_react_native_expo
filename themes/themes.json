@@ -1,22 +1,26 @@
 [
     {
       "key": "MAASTRICHT BLUE",
-      "backgroundColor": "#011627",
-      "color": "#ffffff"
+      "primary": "#011627",
+      "secondary": "#ffffff",
+      "tertiary": "#fdfffc"
     },
     {
       "key": "MAXIMUM BLUE GREEN",
-      "backgroundColor": "#2EC4B6",
-      "color": "#ffffff"
+      "primary": "#2EC4B6",
+      "secondary": "#ffffff",
+      "tertiary": "#fdfffc"
     },
     {
       "key": "ROSE MADDER",
-      "backgroundColor": "#E71D36",
-      "color": "#ffffff"
+      "primary": "#E71D36",
+      "secondary": "#ffffff",
+      "tertiary": "#fdfffc"
     },
     {
       "key": "BRIGHT YELLOW (CRAYOLA)",
-      "backgroundColor": "#FF9F1C",
-      "color": "#1F2D3D"
+      "primary": "#FF9F1C",
+      "secondary": "#1F2D3D",
+      "tertiary": "#fdfffc"
     }
   ]

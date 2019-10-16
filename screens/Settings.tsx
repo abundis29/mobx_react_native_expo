@@ -7,28 +7,27 @@ import {
   TouchableOpacity
 } from "react-native";
 
-import { themes, theme, withTheme } from "../themes/themeProvider";
+import { withTheme } from "../themes/themeProvider";
 
 export const SettingsScreen = ({ theme, themes, setTheme }) => {
-
-  renderItem = ({ item }) => (
+  const renderItem = ({ item }) => (
     <TouchableOpacity onPress={() => setTheme(item.key)}>
       <View
         style={[
           style.itemContainer,
           {
-            backgroundColor: item.backgroundColor
+            backgroundColor: item.primary
           }
         ]}
       >
-        <Text style={[style.itemText, { color: item.color }]}>{item.key}</Text>
+        <Text style={[style.itemText, { color: item.secondary }]}>{item.key}</Text>
       </View>
     </TouchableOpacity>
   );
 
   return (
     <FlatList
-      style={style.container}
+      style={[style.container, {  marginTop:0 }]}
       ListHeaderComponent={
         <Text style={[style.headline, { color: theme.backgroundColor }]}>
           Choose your theme:
@@ -41,9 +40,9 @@ export const SettingsScreen = ({ theme, themes, setTheme }) => {
 };
 
 const style = StyleSheet.create({
-  container: { flex: 1 },
+  container: { flex: 1, marginTop:0 },
   headline: {
-    marginTop: 60,
+    marginTop: 10,
     marginBottom: 20,
     marginLeft: 20,
     fontWeight: "200",

@@ -2,6 +2,7 @@ import { observable, action, computed, extendObservable } from 'mobx';
 import { create, persist } from 'mobx-persist';
 import { AsyncStorage } from 'react-native';
 
+
 class appStore {
   constructor() {}
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { BottomTabBar } from 'react-navigation-tabs';
 
-import { theme, withTheme } from '../themes/themeProvider';
+import { withTheme } from '../themes/themeProvider';
 
 const TabBar = props => {
   return (

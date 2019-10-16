@@ -1,7 +1,14 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  TouchableOpacity,
+  SafeAreaView
+} from "react-native";
 import AppNavigator from "./navigation/Navigator";
-
+import { observer } from "mobx-react-lite";
 // Expo
 import { Asset } from "expo-asset";
 import Sentry from "sentry-expo";
@@ -9,14 +16,13 @@ import * as Font from "expo-font";
 import * as Icon from "@expo/vector-icons";
 
 // MobX Config
-import { Provider as MobXProvider, observer } from "mobx-react";
+import { Provider as MobXProvider } from "mobx-react";
 import appStore from "./stores/appStore";
 
 // Theme
 import { ThemeContextProvider } from "./themes/themeProvider";
 
-const App = () => {
-
+const App = observer(() => {
   const _loadResourcesAsync = async () => {
     return Promise.all([
       Asset.loadAsync([
@@ -45,11 +51,12 @@ const App = () => {
   };
 
   return (
-    <ThemeContextProvider>
-      <AppNavigator />
-    </ThemeContextProvider>
+
+      <ThemeContextProvider>
+        <AppNavigator />
+      </ThemeContextProvider>
   );
-};
+});
 
 export default App;
 
@@ -63,7 +70,3 @@ export default App;
 //     </View>
 //   );
 // }
-
-
-
-

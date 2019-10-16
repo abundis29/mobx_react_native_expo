@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 65417,
   "expoServerNgrokUrl": "https://k3-q94.abundis.app.exp.direct",
   "packagerNgrokUrl": "https://packager.k3-q94.abundis.app.exp.direct",
-  "ngrokPid": 12529
+  "ngrokPid": 65427
 }
